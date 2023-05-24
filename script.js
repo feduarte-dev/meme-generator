@@ -1,10 +1,11 @@
 const textInput = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
-const memeImg = document.getElementById('imagem');
+const memeImg = document.getElementById('meme-image');
 const fire = document.getElementById('fire');
 const water = document.getElementById('water');
 const earth = document.getElementById('earth');
 const memeContainer = document.getElementById('meme-image-container');
+const meme = document.getElementById('meme');
 
 textInput.addEventListener('keyup', () => {
   memeText.innerText = textInput.value;
@@ -26,4 +27,8 @@ water.addEventListener('click', () => {
 
 earth.addEventListener('click', () => {
   memeContainer.style.border = '6px groove rgb(0, 128, 0)';
+});
+
+meme.addEventListener('click', (event) => {
+memeImg.src = event.target.src;
 });
