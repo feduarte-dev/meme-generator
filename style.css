@@ -2,15 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 #meme-insert {
   display: block;
 }
 #meme-text {
-  
   position: absolute;
   top: 50px;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 }
 
 #meme-image-container {
@@ -20,4 +23,3 @@
   min-height: 100px;
   display: inline-block;
 }
-
