@@ -4,25 +4,29 @@
   box-sizing: border-box;
 }
 
-#meme-insert {
+/* #meme-insert {
   display: block;
-}
+} */
 #meme-text {
   position: absolute;
+  left: 0;
   top: 50px;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+  width: 300px;
 }
 
 #meme-image-container {
   background-color: white;
   border: 1px solid black;
-  min-width: 250px;
-  min-height: 100px;
-  display: inline-block;
+width: 400px;
+height: 400px;
+  
 }
-#meme-image {width: 50px;}
+#meme-image {
+  width: fit-content;
+}
 #fire {
   background-color: rgb(255, 0, 0);
 }

@@ -1,6 +1,6 @@
 const textInput = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
-const memeImg = document.getElementById('meme-image');
+
 const fire = document.getElementById('fire');
 const water = document.getElementById('water');
 const earth = document.getElementById('earth');
@@ -10,6 +10,15 @@ const meme = document.getElementById('meme');
 textInput.addEventListener('keyup', () => {
   memeText.innerText = textInput.value;
 });
+
+const addImg = () => {
+  const imgTag = document.createElement('img');
+  imgTag.setAttribute('id', 'meme-image');
+  memeContainer.appendChild(imgTag);
+};
+addImg();
+const memeImg = document.getElementById('meme-image');
+
 // Ensinada nas dicas do readme
 let loadFile = function (event) {
   memeImg.src = URL.createObjectURL(event.target.files[0]);
@@ -30,5 +39,5 @@ earth.addEventListener('click', () => {
 });
 
 meme.addEventListener('click', (event) => {
-memeImg.src = event.target.src;
+  memeImg.src = event.target.src;
 });
