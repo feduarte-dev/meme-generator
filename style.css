@@ -22,7 +22,7 @@
   min-height: 100px;
   display: inline-block;
 }
-#meme-image {width: 100px;}
+#meme-image {width: 50px;}
 #fire {
   background-color: rgb(255, 0, 0);
 }
