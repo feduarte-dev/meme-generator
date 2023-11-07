@@ -8,33 +8,36 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section>
-      <input id="text-input" type="text" maxlength="60"/>
+    <h1>MEME GENERATOR</h1>
+    <section class='container'>
+      <div class='options-container'>
+      <label for="">Add Caption: 
+      <input id="text-input" type="text" maxlength="60"/></label>
       <input
         id="meme-insert"
         type="file"
         accept="image/*"
         onchange="loadFile(event)"
       />
-    </section>
-
+      <div>
+        <button id="fire">Fire</button>
+        <button id="water">Water</button>
+        <button id="earth">Earth</button>
+       </div>
+      </div>
     <div id="meme-image-container">
       <div>
         <img id="meme-image"/>
       </div>
       <span id="meme-text"></span>
     </div>
-
-    <div>
-     <button id="fire">Fire</button>
-     <button id="water">Water</button>
-     <button id="earth">Earth</button>
-    </div>
+  </section>
+   
     <div id="meme">
-    <img id="meme-1" src="./imgs/meme1.png" class="memes" alt="">
-    <img id="meme-2" src="./imgs/meme2.png" class="memes" alt="">
-    <img id="meme-3" src="./imgs/meme3.png" class="memes" alt="">
-    <img id="meme-4" src="./imgs/meme4.png" class="memes" alt="">
+    <img id="meme-1" src="./imgs/meme1.png" class="memes" alt="memes">
+    <img id="meme-2" src="./imgs/meme2.png" class="memes" alt="memes">
+    <img id="meme-3" src="./imgs/meme3.png" class="memes" alt="memes">
+    <img id="meme-4" src="./imgs/meme4.png" class="memes" alt="memes">
     </div>
     <script src="./script.js"></script>
   </body>
